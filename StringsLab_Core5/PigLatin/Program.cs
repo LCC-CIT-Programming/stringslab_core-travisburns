@@ -21,17 +21,17 @@ namespace PigLatin
             Console.WriteLine("The word {0} in pig latin is: {1}", words[0], pig2);
 
             string pig3 = PigLatin3(words[0]);
-            Console.WriteLine("Lab1:The word {0} in pig latin is: {1}", words[0], pig3);
+            Console.WriteLine("Lab Problem 1:The word {0} in pig latin is: {1}", words[0], pig3);
 
             string pig4 = PigLatin4(words[0]);
-            Console.WriteLine("Lab2:The word {0} in pig latin is: {1}", words[0], pig4);
+            Console.WriteLine("Lab Problem 2:The word {0} in pig latin is: {1}", words[0], pig4);
 
             string pig5 = PigLatin5(words[0]);
-            Console.WriteLine("Lab3:The word {0} in pig latin is: {1}", words[0], pig5);
+            Console.WriteLine("Lab Problem 3:The word {0} in pig latin is: {1}", words[0], pig5);
 
 
             string pig6 = pigLatin6(input);
-            Console.WriteLine("Lab4:The phrase/sentence in pig latin is: {0}", pig6);
+            Console.WriteLine("Lab Problem 4:The phrase/sentence in pig latin is: {0}", pig6);
 
             // I'll do this with you in a screen cast
             static bool IsVowel(char c)
