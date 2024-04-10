@@ -14,7 +14,7 @@ namespace ShiftCypher
 
         // Encrypt the input word using the provided shift
         string caesarCipher1 = CaesarCipher(word, shift);
-        Console.WriteLine("Lab 4: Encoded Word: " + caesarCipher1);
+        Console.WriteLine("Lab Problem 4: Encoded Word: " + caesarCipher1);
 
             // Generate a random shift between -10 and 10
             Random rand = new Random();
@@ -22,7 +22,7 @@ namespace ShiftCypher
 
         // Encrypt the input word using the randomly generated shift
         string caesarCipher2 = CaesarCipher2(word, randomShift);
-        Console.WriteLine("Lab 5: Encoded Word (Randomly Generated Shift): " + caesarCipher2);
+        Console.WriteLine("Lab problem 5: Encoded Word (Randomly Generated Shift): " + caesarCipher2);
         }
 
 
