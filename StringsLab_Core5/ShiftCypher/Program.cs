@@ -110,35 +110,30 @@ namespace ShiftCypher
         //should return the encoded string
 
 
+        //On learning from the Self Evalution, I learned I need to do this  (Added a call to String.Split and a loop to process a sentence that includes more than one word?)  - this means I needed to adjust the solution
+        //Need to setup a call to the Split method in order to split the words up. 
 
 
-
-        public static string CaesarCipher2(string word, int shift)
+        public static string CaesarCipher2(string sentence, int shift)
         {
-            string encodedWord = "";
+            string[] words = sentence.Split(' '); // Split the sentence into individual words
+            string encodedSentence = "";
 
-            foreach (char c in word)
+            foreach (string word in words)
             {
-                if (char.IsLetter(c))
-                {
-                    char encodedChar = (char)(c + shift);
-                    encodedWord += encodedChar;
-                }
-                else
-                {
-                    // If it's not a letter, just append it as is
-                    encodedWord += c;
-                }
+                // Encrypt each word separately using the provided shift
+                string encodedWord = CaesarCipher(word, shift);
+                encodedSentence += encodedWord + " "; // Append the encoded word to the encoded sentence
             }
 
-            return encodedWord;
+            return encodedSentence.Trim(); // Remove any trailing spaces and return the encoded sentence
         }
 
 
 
 
 
-        
+
 
 
     }
